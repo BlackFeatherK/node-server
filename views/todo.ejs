@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>Todo List</title>
 
-  <script scr="assets/jquery-3.1.1.min.js"></script>
-  <script scr="assets/todo-list.js"></script>
+  <script src="assets/jquery-3.1.1.min.js"></script>
+  <script src="assets/todo-list.js"></script>
   <link rel="stylesheet" href="assets/styles.css">
 
 </head>
@@ -20,9 +20,9 @@
     </form>
 
     <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
+      <% todos.forEach(function(todo){ %>
+        <li><%= todo.item %></li>
+      <% }); %>
     </ul>
   </div>
   
